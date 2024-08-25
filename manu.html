@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- daisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/374adcfff0.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+
+        }
+    </style> -->
+
+</head>
+<body>
+    <nav>
+        <div class="navbar bg-base-100 items-center justify-between px-4">
+          <div class="navbar-start flex items-center">
+            <div class="navIcon flex items-center justify-center">
+              <i
+                class="fa-solid fa-arrow-right font-bold -rotate-45 bg-lime-400 items-center justify-center rounded-full p-3"
+              ></i>
+              <a class="text-2xl md:text-3xl font-bold">Rinterio</a>
+            </div>
+          </div>
+      
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="navbar-end flex items-center">
+            <!-- For large and medium screens -->
+            <div class="hidden md:flex items-center space-x-4">
+              <div class="searchIcon">
+                <i class="fa-solid fa-search text-xl"></i>
+              </div>
+              <div class="cartIcon">
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+              </div>
+            </div>
+      
+            <div class="bookBtn ml-4 hidden md:block">
+              <a class="btn bg-lime-400 flex px-4 py-2">
+                <h3 class="md:text-md font-bold">Book Consult</h3>
+                <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i>
+              </a>
+            </div>
+      
+            <!-- Dropdown for medium and small screens -->
+            <div class="dropdown md:ml-4 lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-200 rounded-box w-52 right-0">
+                <!-- For medium screens -->
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                <li class="md:hidden">
+                  <a><i class="fa-solid fa-search"></i> Search</a>
+                </li>
+                <li class="md:hidden">
+                  <a><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                </li>
+                <li class="md:hidden">
+                  <a class="btn bg-lime-400 flex w-5/6">
+                    <h3 class="text-sm font-bold">Book Consult</h3>
+                    <i
+                      class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <label class="input input-bordered flex items-center w-full">
+          <input type="text" class="firstName w-full" placeholder="First Name" />
+        </label>
+        <label class="input input-bordered flex items-center w-full">
+          <input type="text" class="lastName w-full" placeholder="Last Name" />
+        </label>
+        <label class="input input-bordered flex items-center w-full">
+          <input type="tel" class="phone w-full" placeholder="Phone Number" />
+        </label>
+        <label class="input input-bordered flex items-center w-full">
+          <input type="email" class="email w-full" placeholder="Email Address" />
+        </label>
+        <textarea
+          class="comment border col-span-1 md:col-span-2 rounded-lg px-2 py-2 w-full h-[300px]"
+          name=""
+          id=""
+          placeholder="Write your message here"
+        ></textarea>
+        <div class="col-span-1 md:col-span-2 flex justify-center">
+          <a class="btn bg-lime-400 flex items-center justify-center px-4 py-2 w-full md:w-auto">
+            <h3 class="text-xl font-bold">Send Mail</h3>
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"
+            ></i>
+          </a>
+        </div>
+      </div>
+      
+</body>
+</html>
